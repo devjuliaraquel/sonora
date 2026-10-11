@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonora | Área do usuário</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="pagina-usuario">
+  <aside class="menu-lateral" id="menuLateral">
+    <a class="marca-menu" href="index.html">Sonora</a>
+    <button class="menu-voltar" id="menuVoltar" type="button" aria-label="Recolher menu">☰</button>
+
+    <div class="usuario-resumo">
+      <div class="avatar-usuario" aria-hidden="true">●</div>
+      <div class="dados-usuario">
+        <strong id="nomeUsuario">Usuário</strong>
+        <span id="emailUsuario">email@email.com</span>
+      </div>
+    </div>
+
+    <nav class="itens-menu" aria-label="Menu principal">
+      <a class="item-menu ativo" href="#inicio"><span class="menu-icone">⌂</span><span class="item-descricao">Início</span></a>
+      <a class="item-menu" href="#perfil"><span class="menu-icone">●</span><span class="item-descricao">Meu perfil</span></a>
+      <a class="item-menu" href="#conquistas"><span class="menu-icone">★</span><span class="item-descricao">Conquistas</span></a>
+      <a class="item-menu" href="#progresso"><span class="menu-icone">▥</span><span class="item-descricao">Meu progresso</span></a>
+      <a class="item-menu" href="#configuracoes"><span class="menu-icone">⚙</span><span class="item-descricao">Configurações</span></a>
+    </nav>
+
+    <button class="sair-menu" id="sairBtn" type="button"><span class="menu-icone">↪</span><span class="item-descricao">Sair</span></button>
+  </aside>
+
+  <main class="conteudo-usuario" id="inicio">
+    <header class="cabecalho-usuario">
+      <div>
+        <p class="sobre-titulo">ÁREA DO USUÁRIO</p>
+        <h1>Olá, <span id="nomeBoasVindas">usuário</span>!</h1>
+        <p class="texto-suave">Continue praticando e acompanhe sua evolução.</p>
+      </div>
+      <div class="etiqueta-sonora">SONORA</div>
+    </header>
+
+    <section class="cartoes-resumo" aria-label="Resumo do progresso">
+      <article class="cartao-resumo">
+        <span class="resumo-icone">♫</span>
+        <div><p>Atividades concluídas</p><strong>12</strong></div>
+      </article>
+      <article class="cartao-resumo">
+        <span class="resumo-icone">★</span>
+        <div><p>Conquistas desbloqueadas</p><strong>1 de 2</strong></div>
+      </article>
+      <article class="cartao-resumo">
+        <span class="resumo-icone">◷</span>
+        <div><p>Sequência atual</p><strong>2 dias</strong></div>
+      </article>
+    </section>
+
+    <section class="painel-usuario" id="perfil">
+      <div class="titulo-secao">
+        <div><p class="sobre-titulo">SUA CONTA</p><h2>Meu perfil</h2></div>
+      </div>
+      <form id="formPerfil" class="form-perfil">
+        <div class="perfil-avatar" aria-hidden="true">●</div>
+        <div class="campos-perfil">
+          <label for="perfilNome">Nome</label>
+          <input id="perfilNome" type="text" placeholder="Seu nome">
+          <label for="perfilEmail">E-mail</label>
+          <input id="perfilEmail" type="email" placeholder="seuemail@exemplo.com">
+          <label for="perfilNascimento">Data de nascimento</label>
+          <input id="perfilNascimento" type="date">
+          <button class="botao-sonora" type="submit">Salvar alterações</button>
+          <p class="mensagem-perfil" id="mensagemPerfil" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="painel-usuario" id="conquistas">
+      <div class="titulo-secao">
+        <div><p class="sobre-titulo">SUAS METAS</p><h2>Conquistas</h2></div>
+      </div>
+      <div class="lista-conquistas">
+        <article class="conquista desbloqueada">
+          <div class="conquista-simbolo">🏆</div>
+          <div><h3>Primeiro desafio</h3><p>Parabéns! Você concluiu seu primeiro desafio.</p></div>
+          <span class="estado-conquista">Desbloqueada</span>
+        </article>
+        <article class="conquista bloqueada">
+          <div class="conquista-simbolo">♙</div>
+          <div><h3>Uma semana de prática</h3><p>Complete atividades por 7 dias consecutivos.</p></div>
+          <span class="estado-conquista">Bloqueada</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="painel-usuario" id="progresso">
+      <div class="titulo-secao">
+        <div><p class="sobre-titulo">ACOMPANHAMENTO</p><h2>Meu progresso</h2></div>
+      </div>
+      <div class="progresso-grade">
+        <article class="grafico-cartao">
+          <h3>Frequência semanal</h3>
+          <p class="texto-suave">Atividades realizadas por dia</p>
+          <div class="grafico-barras" aria-label="Gráfico ilustrativo de atividades por dia">
+            <div class="barra-coluna"><span style="height:32%"></span><small>Seg</small></div>
+            <div class="barra-coluna"><span style="height:66%"></span><small>Ter</small></div>
+            <div class="barra-coluna"><span style="height:44%"></span><small>Qua</small></div>
+            <div class="barra-coluna"><span style="height:86%"></span><small>Qui</small></div>
+            <div class="barra-coluna"><span style="height:54%"></span><small>Sex</small></div>
+            <div class="barra-coluna"><span style="height:25%"></span><small>Sáb</small></div>
+            <div class="barra-coluna"><span style="height:12%"></span><small>Dom</small></div>
+          </div>
+        </article>
+        <article class="grafico-cartao">
+          <h3>Acertos e erros</h3>
+          <p class="texto-suave">Resultado das atividades</p>
+          <div class="acertos-conteudo">
+            <div class="grafico-rosca" aria-label="Gráfico ilustrativo: 75 por cento de acertos"><span>75%<small>acertos</small></span></div>
+            <div class="legenda-grafico"><span><i class="legenda-acerto"></i>Acertos</span><span><i class="legenda-erro"></i>Erros</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="aviso-dados">Os gráficos são ilustrativos. Conecte esta página aos dados do sistema para exibir seu progresso real.</p>
+    </section>
+
+    <section class="painel-usuario" id="configuracoes">
+      <div class="titulo-secao"><div><p class="sobre-titulo">PREFERÊNCIAS</p><h2>Configurações</h2></div></div>
+      <label class="preferencia"><input type="checkbox" id="altoContraste"> Ativar contraste reforçado</label>
+    </section>
+
+    <footer class="rodape-usuario">Sonora · Sua evolução, no seu ritmo.</footer>
+  </main>
+
+  <script src="usuario.js"></script>
+</body>
+</html>
